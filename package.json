@@ -1,6 +1,6 @@
 {
   "name": "react-counter-ts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "react": "^16.7.0",
@@ -10,6 +10,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "tslint -c tslint.json -p .",
+    "lint:fix": "tslint -c tslint.json --fix -t verbose -p .",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -23,9 +25,10 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@types/node": "^10.12.18",
     "@types/react": "^16.7.20",
     "@types/react-dom": "^16.0.11",
+    "tslint": "^5.12.1",
+    "tslint-react": "^3.6.0",
     "typescript": "^3.2.4"
   }
 }

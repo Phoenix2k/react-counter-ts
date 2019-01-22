@@ -1,0 +1,24 @@
+{
+  "extends": ["tslint:latest", "tslint-config-prettier", "tslint-react"],
+  "rules": {
+    "arraysInArrays": ["error", "always", {
+      "arraysInArrays": false
+    }],
+    "completed-docs": true,
+    "jsx-curly-spacing": "always",
+    "jsx-equals-spacing": "always",
+    "jsx-self-close": "always",
+    "jsx-wrap-multiline": false,
+    "no-console": false,
+    "objectsInArrays": ["error", "always", {
+      "arraysInArrays": false
+    }],
+    "quotemark": [true, "single", "jsx-double"],
+    "space-within-parens": [true, "always"],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format"
+    ]
+  }
+}

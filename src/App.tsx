@@ -1,5 +1,5 @@
 import * as React from 'react';
-import './App.css';
+import styles from './App.module.css';
 
 import Counter from './containers/Counter';
 import logo from './logo.svg';
@@ -9,11 +9,11 @@ class App extends React.Component {
   /** Render function for main app. */
   public render() {
     return (
-      <main className="App">
-        <div className="App-container">
-          <header className="App-header">
-            <img alt="logo" className="App-logo" src={logo} />
-            <h1 className="App-title"><div>React</div>Counter</h1>
+      <main className={styles.main}>
+        <div className={styles.container}>
+          <header className={styles.header}>
+            <img alt="logo" className={styles.logo} src={logo} />
+            <h1 className={styles.title}><div>React</div>Counter</h1>
           </header>
           <Counter />
         </div>

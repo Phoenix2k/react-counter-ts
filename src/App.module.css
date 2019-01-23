@@ -1,4 +1,4 @@
-.App {
+.main {
   align-items: center;
   background-color: #282c34;
   display: flex;
@@ -9,27 +9,27 @@
   width: 100%;
 }
 
-.App-header {
+.header {
   color: var(--app-header-background-color, white);
   font-size: var(--app-header-font-size, calc(1rem + 1vmin));
 }
 
-.App-header div {
+.header div {
   font-size: 0.6em;
   font-weight: normal;
 }
 
-.App-link {
+.link {
   color: var(--app-link-color, rgba(97, 218, 251, 0.5));
 }
 
-.App-logo {
+.logo {
   animation: App-logo-spin infinite 20s linear;
   height: var(--app-header-logo-height, 30vmin);
   margin-top: -4rem;
 }
 
-.App-title {
+.title {
   margin: 1rem auto;
 }
 
@@ -43,7 +43,7 @@
 }
 
 @media (max-width: 767px) and (orientation: landscape) {
-  .App-container {
+  .container {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -53,16 +53,15 @@
     width: 100%;
   }
 
-  .App-header {
+  .header {
     margin-top: 0;
   }
 
-  .App-header,
-  .counter {
+  .container > * {
     width: 40%;
   }
 
-  .App-logo {
+  .logo {
     height: var(--app-header-logo-height-landscape, 15vmin);
     margin-top: 1rem;
   }

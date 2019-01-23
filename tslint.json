@@ -1,20 +1,45 @@
 {
-  "extends": ["tslint:latest", "tslint-config-prettier", "tslint-react"],
+  "extends": [
+    "tslint:latest",
+    "tslint-react"
+  ],
   "rules": {
-    "arraysInArrays": ["error", "always", {
-      "arraysInArrays": false
-    }],
+    "arraysInArrays": [
+      "error",
+      "always",
+      {
+        "arraysInArrays": false
+      }
+    ],
     "completed-docs": true,
     "jsx-curly-spacing": "always",
     "jsx-equals-spacing": "always",
     "jsx-self-close": "always",
     "jsx-wrap-multiline": false,
+    "max-line-length": [
+      true,
+      {
+        "limit": 120,
+        "ignore-pattern": "^import |^export {(.*?)}|<path (.*?)"
+      }
+    ],
     "no-console": false,
-    "objectsInArrays": ["error", "always", {
-      "arraysInArrays": false
-    }],
-    "quotemark": [true, "single", "jsx-double"],
-    "space-within-parens": [true, "always"],
+    "objectsInArrays": [
+      "error",
+      "always",
+      {
+        "arraysInArrays": false
+      }
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "space-within-parens": [
+      true,
+      "always"
+    ],
     "variable-name": [
       true,
       "ban-keywords",

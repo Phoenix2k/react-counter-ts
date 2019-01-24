@@ -33,7 +33,7 @@ You can learn more in the [Create React App documentation][getting-started].
 To learn React, check out the [React documentation][react].
 
 ## License
-[![MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
+[![MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md) [![Greenkeeper badge](https://badges.greenkeeper.io/Phoenix2k/react-counter-ts.svg)](https://greenkeeper.io/)
 
 [create-react-app]: https://github.com/facebook/create-react-app
 [deployment]: https://facebook.github.io/create-react-app/docs/deployment

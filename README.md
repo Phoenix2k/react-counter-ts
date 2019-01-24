@@ -1,8 +1,10 @@
 React Counter
 =============
-> Simple counter built with [React][react] and [TypeScript][typescript]
+[![Greenkeeper badge][greenkeeper-image]][greenkeeper-url] [![Build status][build-status-image]][build-status-url]
 
-This project was bootstrapped with [Create React App][create-react-app].
+Simple counter built with [React][react] and [TypeScript][typescript]
+
+>This project was bootstrapped with [Create React App][create-react-app].
 
 ## Available Scripts
 In the project directory, you can run:
@@ -33,11 +35,15 @@ You can learn more in the [Create React App documentation][getting-started].
 To learn React, check out the [React documentation][react].
 
 ## License
-[![MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md) [![Greenkeeper badge](https://badges.greenkeeper.io/Phoenix2k/react-counter-ts.svg)](https://greenkeeper.io/)
+[![MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
 
+[build-status-image]: https://travis-ci.org/Phoenix2k/react-counter-ts.svg?branch=master
+[build-status-url]: https://travis-ci.org/Phoenix2k/react-counter-ts
 [create-react-app]: https://github.com/facebook/create-react-app
 [deployment]: https://facebook.github.io/create-react-app/docs/deployment
 [getting-started]: https://facebook.github.io/create-react-app/docs/getting-started
-[react]: https://reactjs.org/ "React – A JavaScript library for building user interfaces"
+[greenkeeper-image]: https://badges.greenkeeper.io/Phoenix2k/react-counter-ts.svg
+[greenkeeper-url]: https://greenkeeper.io/
+[react]: https://reactjs.org/ "React &ndash; A JavaScript library for building user interfaces"
 [running-tests]: https://facebook.github.io/create-react-app/docs/running-tests
 [typescript]: https://www.typescriptlang.org

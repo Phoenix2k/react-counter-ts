@@ -1,9 +1,9 @@
 import * as React from 'react';
-import '../../animations/spin-clockwise.css';
-import { Container, Header, Logo, Main, Title } from './styles';
+import '../../styles/animations/spin-clockwise.css';
+import { AnimatedImage, Container, Header, Main, Title } from './styles';
 
-import logo from '../../assets/logo.svg';
-import Counter from '../../containers/Counter';
+import Logo from '../../assets/logo.svg';
+import Counter from '../Counter';
 
 /** Main app. */
 class App extends React.Component {
@@ -13,7 +13,7 @@ class App extends React.Component {
       <Main>
         <Container>
           <Header>
-            <Logo alt="logo" src={logo} />
+            <AnimatedImage alt="logo" src={Logo} />
             <Title><div>React</div>Counter</Title>
           </Header>
           <Counter />

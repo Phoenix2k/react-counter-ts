@@ -1,4 +1,4 @@
-import * as constants from '../constants';
+import * as constants from '../../constants';
 
 /** Counter decrement interface. */
 export interface InterfaceDecrementCounter {

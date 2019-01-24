@@ -1,6 +1,6 @@
 import { createStore } from 'redux';
-import { ActionCounter } from '../actions';
-import { ReducerCounter } from '../reducers';
+import { ActionCounter } from '../store/actions';
+import { ReducerCounter } from '../store/reducers';
 import { InterfaceStoreState } from '../types';
 
 /** Contains the default keys and values for the store. */

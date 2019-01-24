@@ -12,7 +12,6 @@ import {
 export const Button = styled.button`
   background: transparent;
   border: 0;
-  border-radius: 100%;
   color: var(--counter-button-highlight-color, ${DEFAULT_COUNTER_BUTTON_HIGHLIGHT_COLOR});
   font-size: calc(1em + 1vmin);
   outline-color: var(--counter-button-highlight-color, ${DEFAULT_COUNTER_BUTTON_HIGHLIGHT_COLOR});

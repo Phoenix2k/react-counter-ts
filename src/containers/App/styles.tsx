@@ -1,18 +1,27 @@
 import styled from 'styled-components';
 
+import { BREAKPOINTS } from '../../styles';
+import {
+  DEFAULT_APP_MAIN_BACKGROUND_COLOR,
+  DEFAULT_APP_MAIN_TEXT_COLOR,
+} from './defaults';
+
+import '../../styles/themes/dark.css';
+import '../../styles/themes/light.css';
+
 export const AnimatedImage = styled.img`
   animation: spin-clockwise infinite 20s linear;
-  height: var(--app-header-logo-height, 30vmin);
+  height: 30vmin;
   margin-top: -4rem;
 
-  @media (max-width: 767px) and (orientation: landscape) {
-    height: var(--app-header-logo-height-landscape, 15vmin);
+  @media (max-width: ${BREAKPOINTS.medium}) and (orientation: landscape) {
+    height: 15vmin;
     margin-top: 1rem;
   }
 `;
 
 export const Container = styled.div`
-  @media (max-width: 767px) and (orientation: landscape) {
+  @media (max-width: ${BREAKPOINTS.medium}) and (orientation: landscape) {
     align-items: center;
     display: flex;
     flex-direction: row;
@@ -28,17 +37,20 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.header`
-  color: var(--app-header-background-color, white);
-  font-size: var(--app-header-font-size, calc(1rem + 1vmin));
+  font-size: calc(1rem + 1vmin);
 
-  @media (max-width: 767px) and (orientation: landscape) {
+  @media (max-width: ${BREAKPOINTS.medium}) and (orientation: landscape) {
     margin-top: 0;
   }
 `;
 
 export const Main = styled.main`
   align-items: center;
-  background-color: #282c34;
+  background-color: var(
+    --app-main-background-color,
+    ${DEFAULT_APP_MAIN_BACKGROUND_COLOR}
+  );
+  color: var(--app-main-text-color, ${DEFAULT_APP_MAIN_TEXT_COLOR});
   display: flex;
   flex-direction: column;
   justify-content: center;

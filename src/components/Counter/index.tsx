@@ -4,16 +4,22 @@ import { Button, CounterIcon, CounterValue, CounterWrapper } from './styles';
 export interface InterfaceCounterProps {
   /** Current number value of the counter. */
   count?: number;
+
   /** Aria label for button controls. */
   i18n_controls?: string;
+
   /** Aria label for the field showing the current count. */
   i18n_count?: string;
+
   /** Button text for decrementing the counter value. */
   i18n_decrement?: string;
+
   /** Button text for incrementing the counter value. */
   i18n_increment?: string;
+
   /** Decrements the current count. */
   onDecrement?: () => any;
+
   /** Increments the current count. */
   onIncrement?: () => any;
 }

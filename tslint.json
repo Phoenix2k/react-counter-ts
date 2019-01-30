@@ -1,8 +1,5 @@
 {
-  "extends": [
-    "tslint:latest",
-    "tslint-react"
-  ],
+  "extends": ["tslint:latest", "tslint-react"],
   "rules": {
     "arraysInArrays": [
       "error",
@@ -11,6 +8,7 @@
         "arraysInArrays": false
       }
     ],
+    "arrow-parens": false,
     "completed-docs": true,
     "jsx-curly-spacing": "always",
     "jsx-equals-spacing": "always",
@@ -31,20 +29,8 @@
         "arraysInArrays": false
       }
     ],
-    "quotemark": [
-      true,
-      "single",
-      "jsx-double"
-    ],
-    "space-within-parens": [
-      true,
-      "always"
-    ],
-    "variable-name": [
-      true,
-      "allow-pascal-case",
-      "ban-keywords",
-      "check-format"
-    ]
+    "quotemark": [true, "single", "jsx-double"],
+    "space-within-parens": [true, 0],
+    "variable-name": [true, "allow-pascal-case", "ban-keywords", "check-format"]
   }
 }

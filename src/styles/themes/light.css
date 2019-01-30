@@ -1,0 +1,8 @@
+[data-theme="light"] {
+  --app-main-background-color: #fff;
+  --app-main-text-color: #1a2838;
+  --counter-button-highlight-color: #80d8f7;
+  --counter-button-highlight-text-color: #fff;
+  --counter-value-selection-color: #80d8f7;
+  --counter-value-text-color: #80d8f7;
+}

@@ -3,7 +3,10 @@ import { InterfaceStoreState } from '../../types';
 import { ActionCounter } from '../actions';
 
 /** Reducer for `Counter` component. Determines whether to _decrement_ or _increment_ the current count. */
-export function ReducerCounter(state: InterfaceStoreState, action: ActionCounter): InterfaceStoreState {
+export function ReducerCounter(
+  state: InterfaceStoreState,
+  action: ActionCounter,
+): InterfaceStoreState {
   switch (action.type) {
     case DECREMENT_COUNTER:
       console.debug('Decrementing...');

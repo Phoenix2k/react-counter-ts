@@ -1,15 +1,14 @@
-React Counter
+React Counter [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url] [![Build status][build-status-image]][build-status-url]
 =============
 Simple counter written in [TypeScript][typescript] using [React][react], [Redux][redux] and [Styled Components][styled-components].
 
 Counts up and down, but never below zero. That's it 👌
 
-[![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
-[![Build status][build-status-image]][build-status-url]
-
 >This project was bootstrapped with [Create React App][create-react-app].
 
-## Available Scripts
+Inspired by Microsoft's [TypeScript React Starter][typescript-react-starter].
+
+## Available scripts
 In the project directory, you can run:
 
 ### `npm start`
@@ -32,9 +31,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment][deployment] for more information.
 
-## Learn More
-You can learn more in the [Create React App documentation][getting-started].
-
+## Learn more
 To learn React, check out the [React documentation][react].
 
 ## License
@@ -42,13 +39,14 @@ To learn React, check out the [React documentation][react].
 
 [build-status-image]: https://travis-ci.org/Phoenix2k/react-counter-ts.svg?branch=master
 [build-status-url]: https://travis-ci.org/Phoenix2k/react-counter-ts
-[create-react-app]: https://github.com/facebook/create-react-app
+[create-react-app]: https://facebook.github.io/create-react-app
 [deployment]: https://facebook.github.io/create-react-app/docs/deployment
 [getting-started]: https://facebook.github.io/create-react-app/docs/getting-started
 [greenkeeper-image]: https://badges.greenkeeper.io/Phoenix2k/react-counter-ts.svg
-[greenkeeper-url]: https://greenkeeper.io/
-[react]: https://reactjs.org/ "React &ndash; A JavaScript library for building user interfaces"
-[redux]: https://redux.js.org/ "Redux &ndash; A predictable state container for JavaScript apps."
+[greenkeeper-url]: https://greenkeeper.io
+[react]: https://reactjs.org "React &ndash; A JavaScript library for building user interfaces"
+[redux]: https://redux.js.org "Redux &ndash; A predictable state container for JavaScript apps."
 [running-tests]: https://facebook.github.io/create-react-app/docs/running-tests
-[styled-components]: https://www.styled-components.com/ "Styled Components &ndash; Use the best bits of ES6 and CSS to style your apps without stress 💅"
+[styled-components]: https://www.styled-components.com "Styled Components &ndash; Use the best bits of ES6 and CSS to style your apps without stress 💅"
 [typescript]: https://www.typescriptlang.org
+[typescript-react-starter]: https://github.com/Microsoft/TypeScript-React-Starter

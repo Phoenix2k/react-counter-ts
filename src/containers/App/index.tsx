@@ -9,6 +9,8 @@ import Counter from '../Counter';
 
 /** Main app. */
 class App extends React.Component {
+
+  /** Sets up theme */
   public componentDidMount() {
     SetupTheme(DEFAULT_APP_THEME);
   }

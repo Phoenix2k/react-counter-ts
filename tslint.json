@@ -30,6 +30,7 @@
       }
     ],
     "quotemark": [true, "single", "jsx-double"],
+    "semicolon": [true, "always"],
     "space-within-parens": [true, 0],
     "variable-name": [true, "allow-pascal-case", "ban-keywords", "check-format"]
   }

@@ -1,4 +1,4 @@
-[data-theme="dark"] {
+:root[data-theme="dark"] {
   --app-main-background-color: #1a2838;
   --app-main-text-color: #fff;
   --counter-button-highlight-color: #80d8f7;

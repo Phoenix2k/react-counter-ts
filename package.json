@@ -27,6 +27,7 @@
     "@types/react-redux": "^7.0.6",
     "@types/redux": "^3.6.0",
     "@types/styled-components": "^4.1.12",
+    "fsevents": "^1.2.7",
     "tslint": "^5.15.0",
     "tslint-react": "^4.0.0",
     "typescript": "^3.4.1"

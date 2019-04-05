@@ -10,6 +10,7 @@
     ],
     "arrow-parens": false,
     "completed-docs": true,
+    "interface-name" : false,
     "jsx-curly-spacing": "always",
     "jsx-equals-spacing": "always",
     "jsx-self-close": "always",

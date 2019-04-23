@@ -14,6 +14,7 @@ export function ReducerCounter(
     case INCREMENT_COUNTER:
       console.debug('Incrementing...');
       return { ...state, count: state.count + 1 };
+    default:
+      return state;
   }
-  return state;
 }

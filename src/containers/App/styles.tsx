@@ -61,8 +61,11 @@ export const Main = styled.main`
 
 export const Title = styled.h1`
   margin: 1rem auto;
+  position: relative;
+  z-index: 1;
 
-  div {
+  span {
+    display: block;
     font-size: 0.6em;
     font-weight: normal;
   }

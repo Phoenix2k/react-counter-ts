@@ -23,7 +23,7 @@ class App extends React.Component {
           <Header>
             <AnimatedImage alt="logo" src={Logo} />
             <Title>
-              <div>React</div>Counter
+              <span>React</span>Counter
             </Title>
           </Header>
           <Counter />

@@ -6,7 +6,7 @@
 .pnp.js
 
 # testing
-/coverage
+/tests/**/*.mp4
 
 # production
 /build
@@ -19,5 +19,6 @@
 .env.production.local
 
 npm-debug.log*
+
 yarn-debug.log*
 yarn-error.log*

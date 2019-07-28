@@ -7,34 +7,36 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.12.1",
-    "npm": "^6.9.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "npm": "^6.10.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-redux": "^7.0.2",
-    "react-scripts": "3.0.0",
-    "redux": "^4.0.1",
-    "styled-components": "^4.2.0"
+    "react-redux": "^7.1.0",
+    "react-scripts": "3.0.1",
+    "redux": "^4.0.4",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "@types/enzyme": "^3.9.1",
+    "@types/enzyme": "^3.10.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/jest": "^24.0.11",
-    "@types/node": "^11.13.7",
-    "@types/react": "^16.8.14",
-    "@types/react-dom": "^16.8.4",
-    "@types/react-redux": "^7.0.8",
+    "@types/jest": "^24.0.15",
+    "@types/node": "^12.6.8",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.5",
+    "@types/react-redux": "^7.1.1",
     "@types/redux": "^3.6.0",
-    "@types/styled-components": "^4.1.14",
-    "fsevents": "^2.0.6",
-    "tslint": "^5.16.0",
+    "@types/styled-components": "^4.1.18",
+    "cypress": "^3.4.0",
+    "fsevents": "^2.0.7",
+    "start-server-and-test": "^1.9.1",
+    "tslint": "^5.18.0",
     "tslint-react": "^4.0.0",
-    "typescript": "^3.4.4"
+    "typescript": "^3.5.3"
   },
   "engines": {
-    "node": "~11.12.0",
-    "npm": "~6.7.0"
+    "node": "~11.14.0",
+    "npm": "~6.10.1"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,11 +51,14 @@
   "private": true,
   "scripts": {
     "build": "react-scripts build",
+    "cypress": "cypress run --spec \"tests/e2e/specs/counter.spec.js\"",
     "eject": "react-scripts eject",
     "lint": "tslint -c tslint.json -p .",
     "lint:fix": "tslint -c tslint.json --fix -t verbose -p .",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "npm run test:e2e && npm run test:unit",
+    "test:e2e": "start-server-and-test start 3000 cypress",
+    "test:unit": "react-scripts test"
   },
   "version": "0.1.6"
 }

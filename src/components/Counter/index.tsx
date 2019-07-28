@@ -50,13 +50,13 @@ function Counter({
         value={count}
       />
       <div aria-label={i18n_controls} role="group">
-        <Button className="counter-button" onClick={onDecrement}>
+        <Button className="counter-button" onClick={onDecrement} data-action="decrement">
           <CounterIcon className="counter-icon-minus" viewBox="0 0 32 32">
             <title>{i18n_decrement}</title>
             <path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z" />
           </CounterIcon>
         </Button>
-        <Button className="counter-button" onClick={onIncrement}>
+        <Button className="counter-button" onClick={onIncrement} data-action="increment">
           <CounterIcon className="counter-icon-plus" viewBox="0 0 32 32">
             <title>{i18n_increment}</title>
             <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z" />

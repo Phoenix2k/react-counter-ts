@@ -2,11 +2,7 @@ import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 
 import Counter from '../../components/Counter';
-import {
-  ActionCounter,
-  decrementCounter,
-  incrementCounter,
-} from '../../store/actions';
+import { ActionCounter, decrementCounter, incrementCounter } from '../../store/actions';
 import { InterfaceStoreState } from '../../types';
 
 /** Maps the state to props for the `Counter` component. */
@@ -15,14 +11,14 @@ export function mapStateToProps({
   i18n_controls,
   i18n_count,
   i18n_decrement,
-  i18n_increment,
+  i18n_increment
 }: InterfaceStoreState) {
   return {
     count,
     i18n_controls,
     i18n_count,
     i18n_decrement,
-    i18n_increment,
+    i18n_increment
   };
 }
 
@@ -30,11 +26,8 @@ export function mapStateToProps({
 export function mapDispatchToProps(dispatch: Dispatch<ActionCounter>) {
   return {
     onDecrement: () => dispatch(decrementCounter()),
-    onIncrement: () => dispatch(incrementCounter()),
+    onIncrement: () => dispatch(incrementCounter())
   };
 }
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(Counter);
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);

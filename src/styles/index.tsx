@@ -1,3 +1,3 @@
 export const BREAKPOINTS = {
-  medium: '768px',
+  medium: '768px'
 };

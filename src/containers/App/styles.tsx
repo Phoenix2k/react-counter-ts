@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 
 import { BREAKPOINTS } from '../../styles';
-import {
-  DEFAULT_APP_MAIN_BACKGROUND_COLOR,
-  DEFAULT_APP_MAIN_TEXT_COLOR,
-} from './defaults';
+import { DEFAULT_APP_MAIN_BACKGROUND_COLOR, DEFAULT_APP_MAIN_TEXT_COLOR } from './defaults';
 
 import '../../styles/themes/dark.css';
 import '../../styles/themes/light.css';
@@ -46,10 +43,7 @@ export const Header = styled.header`
 
 export const Main = styled.main`
   align-items: center;
-  background-color: var(
-    --app-main-background-color,
-    ${DEFAULT_APP_MAIN_BACKGROUND_COLOR}
-  );
+  background-color: var(--app-main-background-color, ${DEFAULT_APP_MAIN_BACKGROUND_COLOR});
   color: var(--app-main-text-color, ${DEFAULT_APP_MAIN_TEXT_COLOR});
   display: flex;
   flex-direction: column;

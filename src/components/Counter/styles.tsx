@@ -3,21 +3,15 @@ import {
   DEFAULT_COUNTER_BUTTON_HIGHLIGHT_COLOR,
   DEFAULT_COUNTER_BUTTON_HIGHLIGHT_TEXT_COLOR,
   DEFAULT_COUNTER_VALUE_SELECTION_COLOR,
-  DEFAULT_COUNTER_VALUE_TEXT_COLOR,
+  DEFAULT_COUNTER_VALUE_TEXT_COLOR
 } from './defaults';
 
 export const Button = styled.button`
   background: transparent;
   border: 0;
-  color: var(
-    --counter-button-highlight-color,
-    ${DEFAULT_COUNTER_BUTTON_HIGHLIGHT_COLOR}
-  );
-  font-size: calc( 1em + 1vmin );
-  outline-color: var(
-    --counter-button-highlight-color,
-    ${DEFAULT_COUNTER_BUTTON_HIGHLIGHT_COLOR}
-  );
+  color: var(--counter-button-highlight-color, ${DEFAULT_COUNTER_BUTTON_HIGHLIGHT_COLOR});
+  font-size: calc(1em + 1vmin);
+  outline-color: var(--counter-button-highlight-color, ${DEFAULT_COUNTER_BUTTON_HIGHLIGHT_COLOR});
   padding: 1em;
   transition: background 0.2s ease-out;
   user-select: none;
@@ -46,10 +40,7 @@ export const Button = styled.button`
 export const CounterValue = styled.input`
   background: transparent;
   border: 0;
-  color: var(
-    --counter-value-text-color,
-    ${DEFAULT_COUNTER_VALUE_TEXT_COLOR}
-  );
+  color: var(--counter-value-text-color, ${DEFAULT_COUNTER_VALUE_TEXT_COLOR});
   display: inline-block;
   font-size: 20vmin;
   margin: 0 0 2rem;
@@ -59,10 +50,7 @@ export const CounterValue = styled.input`
   width: 100%;
 
   &::selection {
-    background: var(
-      --counter-value-selection-color,
-      ${DEFAULT_COUNTER_VALUE_SELECTION_COLOR}
-    );
+    background: var(--counter-value-selection-color, ${DEFAULT_COUNTER_VALUE_SELECTION_COLOR});
   }
 
   @media (orientation: landscape) {
@@ -76,9 +64,9 @@ export const CounterIcon = styled.svg`
   align-items: center;
   display: inline-flex;
   fill: currentColor;
-  height: calc( 1em + 1vmin );
+  height: calc(1em + 1vmin);
   justify-content: center;
   stroke-width: 0;
   stroke: currentColor;
-  width: calc( 1em + 1vmin );
+  width: calc(1em + 1vmin);
 `;

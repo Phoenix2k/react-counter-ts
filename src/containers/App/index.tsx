@@ -1,21 +1,15 @@
 import * as React from 'react';
+import Logo from '../../assets/logo.svg';
 import '../../styles/animations/spin-clockwise.css';
+import Counter from '../Counter';
 import { DEFAULT_APP_THEME } from './defaults';
 import { AnimatedImage, Container, Header, Main, Title } from './styles';
 import { SetupTheme } from './themes';
 
-import Logo from '../../assets/logo.svg';
-import Counter from '../Counter';
-
-/** Main app. */
 class App extends React.Component {
-
-  /** Sets up theme */
   public componentDidMount() {
     SetupTheme(DEFAULT_APP_THEME);
   }
-
-  /** Render function for main app. */
   public render() {
     return (
       <Main>

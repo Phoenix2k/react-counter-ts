@@ -32,7 +32,7 @@ function Counter({
   i18n_decrement,
   i18n_increment,
   onDecrement,
-  onIncrement,
+  onIncrement
 }: InterfaceCounterProps) {
   if (count < 0) {
     throw new Error('Count should not be negative.');

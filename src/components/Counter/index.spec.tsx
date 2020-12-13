@@ -1,3 +1,5 @@
+/// <reference types="jest" />
+
 import enzyme from 'enzyme';
 import React from 'react';
 import Counter from '.';

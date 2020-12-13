@@ -1,4 +1,5 @@
-import React from 'react';
+/// <reference types="jest" />
+
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from '.';
@@ -10,7 +11,7 @@ it('renders without crashing', () => {
     <Provider store={store}>
       <App />
     </Provider>,
-    div,
+    div
   );
   ReactDOM.unmountComponentAtNode(div);
 });

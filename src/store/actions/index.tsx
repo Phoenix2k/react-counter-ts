@@ -19,7 +19,7 @@ export type ActionCounter = InterfaceDecrementCounter | InterfaceIncrementCounte
 export function decrementCounter(): InterfaceDecrementCounter {
   return {
     /** Counter decrement type. */
-    type: constants.DECREMENT_COUNTER,
+    type: constants.DECREMENT_COUNTER
   };
 }
 
@@ -27,6 +27,6 @@ export function decrementCounter(): InterfaceDecrementCounter {
 export function incrementCounter(): InterfaceIncrementCounter {
   return {
     /** Counter increment type. */
-    type: constants.INCREMENT_COUNTER,
+    type: constants.INCREMENT_COUNTER
   };
 }

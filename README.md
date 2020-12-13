@@ -1,4 +1,4 @@
-React Counter [![Greenkeeper badge][greenkeeper-image]][greenkeeper-url] [![Build status][build-status-image]][build-status-url]
+React Counter [![Build status][build-status-image]][build-status-url]
 =============
 Simple counter written in [TypeScript][typescript] using [React][react], [Redux][redux] and [Styled Components][styled-components].
 
@@ -42,8 +42,6 @@ To learn React, check out the [React documentation][react].
 [create-react-app]: https://facebook.github.io/create-react-app
 [deployment]: https://facebook.github.io/create-react-app/docs/deployment
 [getting-started]: https://facebook.github.io/create-react-app/docs/getting-started
-[greenkeeper-image]: https://badges.greenkeeper.io/Phoenix2k/react-counter-ts.svg
-[greenkeeper-url]: https://greenkeeper.io
 [react]: https://reactjs.org "React &ndash; A JavaScript library for building user interfaces"
 [redux]: https://redux.js.org "Redux &ndash; A predictable state container for JavaScript apps."
 [running-tests]: https://facebook.github.io/create-react-app/docs/running-tests
